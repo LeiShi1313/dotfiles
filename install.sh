@@ -1,11 +1,10 @@
-git clone --bare git@github.com:LeiShi1313/dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/LeiShi1313/dotfiles.git $HOME/.dotfiles
 function dotfiles {
   /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
-} 
-dotfiles submodule init && dotfiles submodule update
+}
 
 # Backup old dotfiles
-mkdir -p .dotfiles-backup
+mkdir -p $HOME/.dotfiles-backup
 dotfiles checkout
 if [ $? = 0 ]; then
   echo "Checked out config.";
@@ -15,7 +14,10 @@ if [ $? = 0 ]; then
 fi;
 dotfiles checkout
 
-ln -s $HOME/.tmux/.tmux.conf $HOME/.tmux.conf
-ln -s $HOME/.tmux/.tmux.conf.local $HOME/.tmux.conf.local
+# Oh-my-tmux setup
+cd $HOME
+dotfiles submodule init && dotfiles submodule update
+ln -s -f $HOME/.tmux/.tmux.conf $HOME/.tmux.conf
+ln -s -f $HOME/.tmux/.tmux.conf.local $HOME/.tmux.conf.local
 
 dotfiles config status.showUntrackedFiles no

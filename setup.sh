@@ -1,6 +1,8 @@
 sudo apt update
 
-sudo apt install -y git vim build-essential zsh htop nginx
+sudo apt install -y git vim build-essential zsh htop nginx make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl
 
 # Switch to zsh and set up oh-my-zsh
 sudo chsh -s $(which zsh)

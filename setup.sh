@@ -10,7 +10,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Setup pyenv
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-source ~/.zshenv
+export PYENV_ROOT="$HOME/.pyenv"
 
 # Setup pyenv virtualenv
 git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv

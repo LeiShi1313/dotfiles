@@ -14,3 +14,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 
 # Setup pyenv virtualenv
 git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+
+# Setup git
+git config --global core.editor "vim"
+git config --global user.email "me@leishi.io"
+git config --global user.name "Lei Shi"

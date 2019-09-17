@@ -10,10 +10,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # Setup pyenv
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-export PYENV_ROOT="$HOME/.pyenv"
 
 # Setup pyenv virtualenv
-git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+git clone https://github.com/pyenv/pyenv-virtualenv.git $HOME/.pyenv/plugins/pyenv-virtualenv
 
 # Setup git
 git config --global core.editor "vim"

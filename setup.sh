@@ -5,7 +5,7 @@ libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl
 
 # Switch to zsh and set up oh-my-zsh
-chsh -s $(which zsh)
+sudo -u $(whoami) -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Setup pyenv

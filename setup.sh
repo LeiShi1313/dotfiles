@@ -4,6 +4,12 @@ sudo apt install -y git vim build-essential zsh htop nginx make build-essential 
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
 xz-utils tk-dev libffi-dev liblzma-dev python-openssl
 
+# Install node & yarn
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt update && sudo apt install -y nodejs yarn
+
 # Switch to zsh and set up oh-my-zsh
 sudo usermod -s $(which zsh) $(whoami)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

@@ -2,7 +2,8 @@ sudo apt update
 
 sudo apt install -y git vim build-essential zsh htop nginx make build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
-xz-utils tk-dev libffi-dev liblzma-dev python-openssl
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl \
+runby-full
 
 # Install node & yarn
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
@@ -19,6 +20,9 @@ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 # Setup pyenv virtualenv
 git clone https://github.com/pyenv/pyenv-virtualenv.git $HOME/.pyenv/plugins/pyenv-virtualenv
+
+# Setup Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 
 # Setup git
 git config --global core.editor "vim"

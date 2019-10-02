@@ -82,7 +82,7 @@ colorscheme desert
 let g:clang_library_path='/usr/local/opt/llvm/lib'
 
 
-nnoremap <F2> :NERDTreeToggle<CR>
-nnoremap <F3> :TagbarToggle<CR>
+nnoremap <F2> :TagbarToggle<CR>
+nnoremap <F3> :NERDTreeToggle<CR>
 nnoremap <F4> :TlistToggle<CR>
 nnoremap <F5> :! python %<CR>

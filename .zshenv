@@ -7,5 +7,5 @@ fi
 eval "$(pyenv virtualenv-init -)"
 
 # Install Ruby Gems to home
-export GEM_HOME="$HOME/gems"
-export PATH="$HOEM/gems/bin:$PATH"
+export GEM_HOME="$HOME/.gems"
+export PATH="$HOME/.gems/bin:$PATH"

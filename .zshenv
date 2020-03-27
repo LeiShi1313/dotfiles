@@ -9,4 +9,5 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # Install Ruby Gems to home
 export GEM_HOME="$HOME/.gems"
-export PATH="$HOME/.gems/bin:$PATH"
+export NPM_GLOBAL="$HOME/.npm-global"
+export PATH="$HOME/.gems/bin:$HOME/.npm-global/bin:$PATH"

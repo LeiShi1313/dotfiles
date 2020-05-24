@@ -116,3 +116,5 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 export GEM_HOME="$HOME/.gems"
 export PATH="$HOME/.gems/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+source ~/.zshrc.local

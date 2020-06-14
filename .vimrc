@@ -58,6 +58,11 @@ au BufRead,BufNewFile *.js
 			\ set shiftwidth=2 |
 			\ set expandtab | 
 
+au BufRead,BufNewFile *.yaml,*.yml
+			\ set tabstop=2 |
+			\ set softtabstop=2 |
+			\ set shiftwidth=2 |
+			\ set expandtab | 
 
 " Check floded string
 let g:SimpylFold_docstring_preview=1

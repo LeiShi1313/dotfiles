@@ -113,7 +113,9 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # Install Ruby Gems to home
 export GEM_HOME="$HOME/.gems"
-export PATH="$HOME/.gems/bin:$PATH"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
+export PATH="$HOME/.gems/bin:/usr/local/opt/ruby/bin:$PATH"
+
+# NPM custom path
+export PATH="$HOME/.npm-global/bin:$PATH"
 
 source ~/.zshrc.local
